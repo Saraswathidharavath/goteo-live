@@ -1,0 +1,124 @@
+---
+bazar-spread-text: '%s - This Christmas, give open crowdfunding for the common good with @goteofunding #openbazaar'
+bazar-thanks: 'Thank you for visiting our bazaar, you can help us promote it.'
+faq-payment-method: '<a href="/faq/investors#q2" target="_blank">What payment systems does Goteo offer? Are they safe?</a>'
+imperative-register: Register
+invest-address-address-field: Address
+invest-address-birthyear-field: 'Year of birth'
+invest-address-country-field: Country
+invest-address-fail: 'There are empty or faulty fields. Please check the form so you can go forward and receive your reward!'
+invest-address-friend-field: 'Tick this box if it is a gift for another person'
+invest-address-gender-field: Gender
+invest-address-header: 'Where would you like to receive the reward (only if it''s sent via the postal service)'
+invest-address-location-field: City
+invest-address-maildest-field: 'Recipient''s email'
+invest-address-msgdest-field: 'Message for the recipient'
+invest-address-myemail-field: 'Your email'
+invest-address-myname-field: 'Your name'
+invest-address-name-field: 'Name & Surname'
+invest-address-namedest-field: 'Name of the recipient'
+invest-address-nif-field: 'VAT Number'
+invest-address-title: 'Make sure you receive your reward'
+invest-fiscal-warning: '<b>If you want us to issue your donation certificate in order to be entitled to the tax benefits</b> of your contribution, it is <b>necessary that you provide us with your personal data BEFORE January 15</b>, since by virtue of article <b>5 of Order EHA/3021/2007, of October 11, approving model 182 of the informative declaration of donations, donations and contributions received</b>, we are obliged to present this declaration in the month of January of each year, in relation to the donations, donations and contributions received or disposals made during the previous calendar year. <br><br> In case of not receiving your data in time, you renounce to the tax benefits of your contribution, since the noncompliance in the presentation period of the declaration form 182, of donations received, entails fines for the Goteo Foundation for noncompliance with the previous regulation.<br>'
+invest-fiscal-renounce: 'I do not wish to receive a Donation Certificate'
+invest-address-zipcode-field: 'ZIP code'
+invest-address-legal-entity-field: Legal entity
+invest-address-legal-document-type-field: Type of document
+invest-alert-investing: 'You''re about to contribute with '
+invest-alert-lackamount: 'The quantity must be superior to the reward selected'
+invest-alert-lackdrop: 'There is no Matchfunding left to multiply your contribution, left amount is'
+invest-alert-noreward: 'You haven''t selected any reward. Is that correct?'
+invest-alert-noreward_renounce: 'Do you really renounce to any reward? '
+invest-alert-renounce: 'You''re renouncing to the reward, or the reward chosen isn''t an object or a product so you can detax your donation. To do so, we need your VAT number!'
+invest-alert-rewards: 'You’ve choosen the following reward:'
+invest-amount: Quantity
+invest-amount-in-pool: 'You’ve got %s in your virtual wallet'
+invest-amount-tooltip: 'Enter the quantity with which you want to support this project'
+invest-anonymous: 'I want my contribution to be anonymous'
+invest-button: Contribute
+invest-called-maxdrop: 'Up to a maximum of <strong>%s &euro;</strong>'
+invest-called-maxproj: 'This project you backed up has already obtained the maximum quantity of <strong>Matchfunding</strong> from the call <span class="call">%s</span>.'
+invest-called-nodrop: 'Currently, there is no more <strong>Matchfunding</strong> left for the call %s'
+invest-called-rest: 'There’s just <strong>%s €</strong> left of <strong>Matchfunding</strong> for the call <span class="call">%s</span>'
+invest-card-method: Credit Card
+invest-donation-header: 'Enter the fiscal information for this donation'
+invest-drop-method: Matching funds
+invest-fiscal-fail: 'There are faulty of empty fields. Please check the fiscal form to go forward and deduct your contribution!'
+invest-fiscal-skip: 'I don’t want to fill in this now'
+invest-fiscal-title: 'Donation certificate request'
+invest-login-alert: 'You must register or <a href="%s">log in</a> to make your contribution'
+invest-mail_info-address: 'You''ll receive the reward at the following address:'
+invest-make-sure-save: Save
+invest-make-sure-title: Confirm
+invest-method: 'Payment method'
+invest-method-title: 'Make your contribution'
+invest-modal-fiscal-title: 'Tax information'
+invest-modal-pool-description: 'The virtual wallet is Goteo’s credit system, which you can use to contribute projects on our platform whenever you want, with no need to give your credit card or PayPal data each time.'
+invest-modal-pool-title: 'About Goteo Virtual Wallet'
+invest-more-info: 'More information'
+invest-next_step: 'Next step'
+invest-payment-email: 'Enter your PayPal user name'
+invest-payment-fail: 'Something went wrong with the payment'
+invest-payment-success: 'The payment has been made correctly'
+invest-payment_method-header: 'Choose a method of payment'
+invest-payment-method: 'Payment method'
+invest-stripe-method: 'Subscription via Stripe'
+invest-stripe-description: "By using Stripe, your payment will be charged on a monthly subscription."
+invest-stripe-disabled: "This proyect has disabled Stripe as payment method."
+invest-pool: 'I want my donation, in the event that the project doesn''t reach its goal, to remain in my Goteo Virtual Wallet.'
+invest-pool-available: Available
+invest-pool-error: 'You do not have enough money in your virtual wallet'
+invest-pool-method: 'Virtual Wallet'
+invest-process-completed: 'Your contribution has been completed previoulsy'
+invest-project: 'to the project'
+invest-resign: 'I renounce to my personal reward, I just want to support the project'
+invest-reward-subscribable: 'Monthly subscription'
+invest-reward-none: 'These can no longer be chosen'
+invest-reward-not-found: 'Reward not found!'
+invest-reward-used-up: 'This reward has been used up!'
+invest-select-reward: 'Choose your reward'
+invest-share-title: Share
+invest-social-header: 'With collective benefits, we all move forward'
+invest-status-cancelled: Cancelled
+invest-status-charged: Charged
+invest-status-paid: 'Paid to project'
+invest-status-pending: Pending
+invest-status-processing: Incomplete
+invest-status-relocated: Relocated
+invest-status-returned: 'Returned (archived)'
+invest-status-to-pool: 'Virtual wallet'
+invest-step-1: Reward
+invest-step-2: Payment
+invest-step-3: Confirm
+invest-step-4: Share
+invest-success-make-sure: 'Well done! Your contribution to the project <strong>%s</strong> has been successfully managed.'
+investing_closed: 'No more contributions to this campaign allowed.'
+proj-widget-my_invest: 'My contribution'
+project-invest-confirm: 'You''re one step away from becoming a backer of this project...'
+project-invest-continue: 'Choose a method of payment:'
+project-invest-fail: 'Something went wrong, please try again.'
+project-invest-guest: 'Awesome!'
+project-invest-ok: 'Your contribution to co-finance this project has been processed :)'
+project-invest-pool-button: 'Use my Virtual Wallet'
+project-invest-start: 'You''re one step away from becoming a backer of this project...'
+project-return-button: 'Back to project'
+project-see-msg: 'See your message'
+spread-facebook: 'Share on Facebook'
+spread-twitter: 'Share on Twitter'
+user-login-required-login: 'If you’re a registered user you should <a href="%s">log in</a>; if you are not, you should create a new user. (In case you want to make an anonymous donation, you can select that option later)'
+warning_nojavascript: 'Please enable javascript from your browser''s privacy settings to continue the payment process'
+invest-no-register: 'Skip this step, I just want to contribute'
+invest-user-not-ghost: 'This email belongs to an existing user!'
+invest-user-name-or-anonymous: 'Name is mandatory unless you want to donate anonymously'
+invest-created-manually-ok: 'Manual invest created successfully, select reward and address now'
+invest-created-manually-ko: 'Error on creating manual invest [%s]'
+invest-tip-part-1: 'I want to add to my donation: '
+invest-tip-part-2: 'to contribute to the mission of the <b>Goteo Foundation</b><br> for a more ethical and collaborative society'
+invest-mail-donate-tip: 'With your donation you have decided to collaborate with the <strong>Goteo Foundation</strong> with %s € extra, thank you very much!.'
+invest-update-total: 'You are going to make a total donation of <span class="amount-reminder" id="total-amount">%TOTAL_AMOUNT%</span>  👉 <span class="break-down">%PROJECT_AMOUNT% to the project + <span id="tip-amount">%DONATE_AMOUNT%</span> to Goteo Foundation'
+invest-extra-info: 'Extra info'
+donor-legal-entities-natural-person: Natural person
+donor-legal-entities-legal-person: Legal person
+donor-legal-document-type-cif: CIF
+donor-legal-document-type-nif: NIF
+donor-legal-document-type-vat: VAT
