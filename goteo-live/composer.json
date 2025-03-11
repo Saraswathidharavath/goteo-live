@@ -1,0 +1,103 @@
+{
+    "require": {
+        "php": "^7.4",
+        "ext-curl": "*",
+        "ext-dom": "*",
+        "ext-fileinfo": "*",
+        "ext-gd": "*",
+        "ext-intl": "*",
+        "ext-json": "*",
+        "ext-mbstring": "*",
+        "ext-openssl": "*",
+        "ext-pdo": "*",
+        "ext-simplexml": "*",
+        "ext-xml": "*",
+        "foil/foil": "~0.6",
+        "tpyo/amazon-s3-php-class": "dev-master#81a35c61bf76be7c02c95a57771031d21277b1b5",
+        "phpmailer/phpmailer": "^6.4",
+        "jdorn/file-system-cache": "dev-master",
+        "intervention/image": "~2.0",
+        "mibe/feedwriter": "~1.0",
+        "lusitanian/oauth": "dev-master#c3b5e51fcf86ebe83023d34744d7da131a9744a5",
+        "iignatov/lightopenid": "~1.0",
+        "paypal/adaptivepayments-sdk-php": "*",
+        "paypal/merchant-sdk-php": "*",
+        "symfony/config": "4.4.*",
+        "symfony/console": "4.4.*",
+        "symfony/css-selector": "4.4.*",
+        "symfony/dependency-injection": "4.4.*",
+        "symfony/dom-crawler": "4.4.*",
+        "symfony/error-handler": "4.4.*",
+        "symfony/finder": "4.4.*",
+        "symfony/form": "4.4.*",
+        "symfony/framework-bundle": "4.4.*",
+        "symfony/http-foundation": "4.4.*",
+        "symfony/http-kernel": "4.4.*",
+        "symfony/routing": "4.4.*",
+        "symfony/security": "4.4.*",
+        "symfony/stopwatch": "4.4.*",
+        "symfony/templating": "4.4.*",
+        "symfony/translation": "4.4.*",
+        "symfony/process": "4.4.*",
+        "symfony/validator": "4.4.*",
+        "symfony/yaml": "4.4.*",
+        "monolog/monolog": "^1.17",
+        "gregwar/captcha": "^1.1",
+        "geoip2/geoip2": "~2.0",
+        "openclerk/country-list": "^1.0",
+        "mockery/mockery": "^1.0",
+        "cron/cron": "1.0.*@dev",
+        "bramus/monolog-colored-line-formatter": "~2.0",
+        "setasign/fpdf": ">=1.8.1",
+        "rych/phpass": "3.0.*@beta",
+        "erusev/parsedown": "^1.6",
+        "league/omnipay": "~3.0",
+        "league/html-to-markdown": "^4.4",
+        "omnipay/dummy": "^3.0",
+        "omnipay/manual": "^3.0",
+        "omnipay/paypal": "~3.0",
+        "ua-parser/uap-php": "^3.4",
+        "kohkimakimoto/lib-migration": "^1.2",
+        "sensiolabs/ansi-to-html": "^1.1",
+        "unreal4u/telegram-api": "~3.4",
+        "spipu/html2pdf": "^5.2",
+        "snowplow/referer-parser": "0.2.0",
+        "graylog2/gelf-php": "~1.5",
+        "twig/twig": "^3.0",
+        "symfony/twig-bridge": "4.4.*",
+        "stripe/stripe-php": "^13.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "": ["src/", "extend/goteo-private/src"]
+        }
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^9.0",
+        "guzzle/plugin-mock": "~3.1",
+        "symfony/phpunit-bridge": "^5.3"
+    },
+    "conflict": {
+        "symfony/symfony": "*"
+    },
+    "extra": {
+        "symfony": {
+            "allow-contrib": false,
+            "require": "4.4.*"
+        }
+    },
+    "repositories": {
+        "paypal/sdk-core-php": {
+            "type": "vcs",
+            "url": "https://github.com/GoteoFoundation/sdk-core-php.git"
+        },
+        "paypal/adaptivepayments-sdk-php": {
+            "type": "vcs",
+            "url": "https://github.com/GoteoFoundation/adaptivepayments-sdk-php.git"
+        },
+        "paypal/merchant-sdk-php": {
+            "type": "vcs",
+            "url": "https://github.com/GoteoFoundation/merchant-sdk-php.git"
+        }
+    }
+}
