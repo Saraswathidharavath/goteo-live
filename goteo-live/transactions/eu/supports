@@ -1,0 +1,16 @@
+---
+mandatory-support-field-description: 'Derrigorrekoa da deskribapena idaztea'
+mandatory-support-field-name: 'Derrigorrekoa da elkarlanaren izena idaztea'
+step-6: Kolaborazioak
+step-supports: 'Urratsa: Proiektua / Kolaborazioak'
+supports-field-description: Deskribapena
+supports-field-support: Laburpena
+supports-field-type: 'Laguntza mota'
+supports-fields-support-title: Kolaborazioak
+supports-main-header: 'Elkarlanen eskaera'
+tooltip-project-nsupport: 'Elkarlan berri bat betetzeko alholkua'
+tooltip-project-support: 'Dauden elkarlanak editatzeko alhokua'
+tooltip-project-support-description: "Laburki azaldu zertan datza proiektuak behar duen laguntza, jendea igarri eta laguntzen animatu dezala."
+tooltip-project-support-support: 'Behar den elkarlaneko tituloa'
+tooltip-project-support-type: 'Aukera ezazu, proiektuak ekintza konkretuetan laguntza behar badu, edo maileguak behar badu (materialak, azpiegiturak, etabar).'
+tooltip-project-supports: 'Goteon proiektuak bestelako laguntza mota jaso dezakete, diruaz gain. Badago jendea ekonomikoki agian ezin duela babestu, baina bai bere gaitasunarekin, denborarekin, energiarekin, etabar.'
