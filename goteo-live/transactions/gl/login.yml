@@ -1,0 +1,70 @@
+---
+auth-access-forbbiden: 'Non tes permisos para acceder aquí!'
+error-register-userid: 'É obrigado escribir un nome de acceso'
+login-access-button: Iniciar sesión
+login-access-header: 'Usuario rexistrado'
+login-access-password-field: Contrasinal
+login-access-username-field: 'Nome de acceso'
+login-fail: 'Erro de acceso'
+login-leave-button: 'Darse de baixa'
+login-leave-header: 'Pechar a conta'
+login-leave-message: 'Déixanos unha mensaxe'
+login-new-user-label: 'Crear un novo usuario?'
+login-oneclick-header: 'Accede cun só click'
+login-recover-button: Recuperar contrasinal
+login-recover-email-field: 'Email da conta'
+login-recover-header: "Enche o campo co correo electrónico que empregaches para darte de alta na plataforma. Moitas veces é o mesmo que tes vinculado ás túas redes sociais. Atención: Recibirás un correo nesa mesma conta de correo cunha ligazón para mudar o contrasinal. Se non recibes o correo, verifica que non estea no cartafol do spam. Se solicitaches máis dunha vez un contrasinal novo, terás tantos correos cunha ligazón autoxerada como solicitudes feitas. Emprega a ligazón do último correo recibido. Se non lembras o correo podes contacta connosco, non esquezas mencionar algúns datos para facer máis doada a pescuda do teu usuario/a (nome completo, alcume, data de alta ou se fixeches algunha achega nalgún proxecto en concreto)."
+login-recover-label: 'Esqueciches o teu contrasinal?'
+login-recover-link: 'Recuperar contrasinal'
+login-recover-modal-button: Enviar
+login-recover-modal-sucess: 'Feito! - enviamosche un correo electrónico a %s cunha ligazón para restaurar o contrasinal.'
+login-recover-modal-text: 'Insire o enderezo de correo electrónico que empregaches para rexistrarte e enviarémoste unha ligazón para restaurar o teu contrasinal.'
+login-recover-username-field: 'Nome de acceso'
+login-register-button: Rexistrar
+login-register-confirm-field: 'Confirmar correo'
+login-register-confirm_password-field: 'Confirmar contrasinal'
+login-register-email-field: Correo electrónico
+login-register-header: 'Novo usuario'
+login-register-password-field: Contrasinal
+login-register-password-minlength: 'Mínimo 6 caracteres'
+login-register-userid-field: 'Nome de acceso'
+login-register-username-field: 'Nome público'
+login-signin-facebook: 'Accede con Facebook'
+login-signin-google: 'Accede con Google'
+login-signin-linkedin: 'Accede con LinkedIn'
+login-signin-myopenid: 'Accede con myOpenID'
+login-signin-openid: 'Outro servidor Open ID'
+login-signin-openid-go: Ir
+login-signin-twitter: 'Accede con Twitter'
+login-signin-ubuntu: 'Accede co usuario de Ubuntu One'
+login-signin-view-more: 'Ensinar máis opcións de aceso'
+login-signin-yahoo: 'Accede con Yahoo'
+login-title: 'Iniciar sesión'
+oauth-confirm-user: 'Ligar usuario existente'
+oauth-facebook-access-denied: 'Acceso dende Facebook denegado'
+oauth-goteo-openid-sync-password: 'Estás tentando ligar unha conta xa existente en Goteo cun provedor externo. Isto permitirache entrar en Goteo cun so clic no futuro.<br>Esta primeira vez deberás proporcionar o contrasinal da túa conta en Goteo para confirmar a túa identidade.'
+oauth-goteo-user-not-exists: 'Ese usuario non existe en Goteo'
+oauth-goteo-user-password-error: 'Esta conta xa está a usar outro provedor de acceso sen contrasinal. Se queres usar máis dun provedor de acceso primeiro tes que definir un contrasinal.'
+oauth-goteo-user-password-exists: 'Ese usuario xa existe en Goteo'
+oauth-goteo-user-provider-error: 'Tes que usar <strong>%s</strong> para acceder a este usuario.<br>Se quere usar máis dun provedor de acceso para esta conta, primeiro tes que definir un contrasinal.'
+oauth-import-about: 'Canto a ti'
+oauth-import-facebook: 'Ligazón á túa conta de Facebook'
+oauth-import-linkedin: 'Ligazón á túa conta de LinkedIn'
+oauth-import-location: 'Lugar de residencia'
+oauth-import-name: Nome
+oauth-import-twitter: 'Ligazón á túa conta de Twitter'
+oauth-import-website: 'Os teus sitios webs'
+oauth-linkedin-access-denied: 'Acceso dende Linkedin denegado'
+oauth-login-imported-data: 'Tamén van a importarse estes datos, podes cambialos unha vez autenticado:'
+oauth-login-welcome-from: 'Benvido/a a Goteo! Comproba o teu nome de usuario e email para finalizar o proceso. No caso de que non se puidera importar o email ou o cambies por outro, recibirás un correo electrónico cunha ligazón de activación para comprobar a súa validez.'
+oauth-openid-access-denied: 'Acceso dende Open ID denegado'
+oauth-openid-email-required: 'O provedor de Open ID debe proporcionar o correo electrónico para continuar!'
+oauth-openid-not-logged: 'Usuario desconectado dende Open ID'
+oauth-token-request-error: 'Ocurriu un erro ó obter as credenciais co provedor'
+oauth-twitter-access-denied: 'Acceso dende Twitter denegado'
+oauth-unknown-provider: 'Non se pode comezar sesión con este provedor'
+reset-password-new-password: 'Volve escribir o teu contrasinal novo'
+reset-password-old-password: 'O teu contrasinal novo'
+reset-password-save: Gardar
+reset-password-title: 'Definir contrasinal novo'
+login-alternate-ids: Outras opcións
