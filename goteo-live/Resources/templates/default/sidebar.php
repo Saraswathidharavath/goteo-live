@@ -1,0 +1,1 @@
+<?php require(GOTEO_PATH . 'Resources/templates/responsive/partials/sidebar.php'); ?>
