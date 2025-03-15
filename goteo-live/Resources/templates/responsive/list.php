@@ -1,64 +1,26 @@
 <?php
 
-$this->layout("translate/layout");
+$title= $this->section ? $this->text($this->blog_sections[$this->section]) : $this->tag->name;
 
+$this->layout('blog/layout', [
+	'bodyClass' => 'blog',
+    'title' => $title ? ucfirst($title).' :: Goteo.org' : 'Blog',
+    'meta_description' => ''
+    ]);
 
-$this->section('translate-content');
-
-$fields = $this->fields;
-$q = $this->get_query('q');
-$query = $this->get_query() ? '?'. http_build_query($this->get_query()) : '';
+$this->section('blog-content');
 
 ?>
-<div class="dashboard-content">
-  <div class="inner-container">
 
-    <table class="footable table table-striped">
-      <thead>
-        <tr>
-          <th data-type="html" data-breakpoints="xs">ID</th>
-          <?php
-            $i=0;
-            foreach($fields as $field => $type):
-              if($field == 'pending') continue;
-          ?>
-          <th data-type="html" <?= $i != 0 ? ' data-breakpoints="xs"' :'' ?>><?= $this->text("translator-field-$field") ?></th>
-          <?php
-            $i++;
-            endforeach;
-          ?>
-          <th data-type="html"><?= $this->text('translator-translations') ?></th>
-          <th data-type="html">&nbsp;</th>
-        </tr>
-      </thead>
-      <tbody>
+<?= $this->insert('partials/components/main_slider', [
+            	  'banners' => $this->banners,
+            	  'nav' => 'blog/partials/main_slider_nav',
+            	  'button_text' => $this->text('regular-read_more')
+]) ?>
+<?= $this->insert('blog/partials/list_posts') ?>
 
-        <?php foreach($this->list as $ob): ?>
-            <tr>
-              <td><?= $q ? str_ireplace($q, '<span class="badge">' . $q . '</span>', $ob->id) : $ob->id ?></td>
-              <?php
-                foreach($fields as $field => $type):
-                  if($field == 'pending') continue;
-                  $val = $this->text_truncate(strip_tags($ob->{$field}));
-              ?>
-                <td><?= $q ? str_ireplace($q, '<span class="badge">' . $q . '</span>', $val) : $val ?></td>
-              <?php endforeach ?>
-              <td><?= implode(", ", array_map(function($l) use ($ob) {
-                if(in_array($l, $ob->pendings)) {
-                  return '<span class="text-danger" title="' . $this->text('translator-pending') . '">' . $l . '</span>';
-                }
-                return $l;
-                }, $ob->translations)) ?></td>
-              <td><a class="btn btn-sm btn-default" href="/translate/<?= $this->zone ?>/<?= $ob->id . $query ?>"><span class="glyphicon glyphicon-pencil"></span> <?= $this->text('regular-edit') ?></a></td>
-            </tr>
-
-        <?php endforeach ?>
-
-      </tbody>
-    </table>
-
-    <?= $this->insert('partials/utils/paginator', ['total' => $this->total, 'limit' => $this->limit]) ?>
-  </div>
-</div>
+<?php if(!$this->tag): ?>
+	<?= $this->insert('blog/partials/list_sticky') ?>
+<?php endif; ?>
 
 <?php $this->replace() ?>

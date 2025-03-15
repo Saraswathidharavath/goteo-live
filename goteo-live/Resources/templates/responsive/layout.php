@@ -1,27 +1,77 @@
 <?php
 
-$this->layout('dashboard/layout', [
-    'bodyClass' => 'dashboard',
-    'title' => $this->text('meta-title-pool-method'),
-    'meta_description' => $this->text('invest-method-title')
-    ]);
+if($this->post->image)
 
-$this->section('dashboard-content');
+	$meta_img= $this->post->image->getlink(400, 0, false, true);
+
+elseif($this->post->header_image)
+	$meta_img= $this->post->header_image->getlink(400, 0, false, true);
+
+else
+	$meta_img= $this->asset('img/blog/header_default.png');
+
+
+$this->layout('layout', [
+    'tw_image' =>  $meta_img
+    ]);
 
 ?>
 
-    <?= $this->insert('pool/partials/steps_bar') ?>
+<?php $this->section('head'); ?>
 
-    <div class="dashboard-content cyan">
-      <div class="inner-container">
-        <div class="panel panel-default">
-          <div class="panel-body">
+    <?= $this->insert('blog/partials/styles'); ?>
 
-            <?= $this->supply('dashboard-content-pool') ?>
+<?php
 
-          </div>
-        </div>
-      </div>
-    </div>
+$this->append();
+
+$this->section('content');
+
+$this->supply('announcements', $this->insert("partials/components/announcements"));
+
+?>
+
+<div class="blog">
+
+    <?= $this->supply('blog-content') ?>
+
+</div>
 
 <?php $this->replace() ?>
+
+<?php $this->section('footer') ?>
+
+<?= $this->insert('blog/partials/javascript') ?>
+
+<script>
+    $(function(){
+    	$('div').selectionSharer();
+
+        $('.slider-team').slick({
+            dots: false,
+            autoplay: true,
+            infinite: true,
+            speed: 2000,
+            autoplaySpeed: 3000,
+            fade: true,
+            arrows: false,
+            cssEase: 'linear'
+        });
+
+        $('.slider-main').slick({
+            dots: true,
+            infinite: true,
+            autoplay: false,
+            autoplaySpeed: 7000,
+            speed: 1500,
+            fade: true,
+            arrows: true,
+            cssEase: 'linear',
+            prevArrow: '<div class="custom-left-arrow"><span class="fa fa-angle-left"></span><span class="sr-only">Prev</span></div>',
+            nextArrow: '<div class="custom-right-arrow"><span class="fa fa-angle-right"></span><span class="sr-only">Prev</span></div>',
+        });
+    });
+</script>
+
+<?php $this->append() ?>
+

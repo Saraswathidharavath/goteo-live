@@ -1,40 +1,39 @@
-<?php
+<?php $this->layout('admin/layout');
 
-$meta_img = $this->workshop->header_image ? $this->workshop->getHeaderImage()->getLink(700, 700, false, true) : $this->asset('img/blog/header_default.png') ;
-
-$this->layout('workshop/layout', [
-	'bodyClass' => 'workshop',
-    'title' => $this->workshop->title,
-    'meta_description' => $this->workshop->subtitle,
-    'tw_image' => $meta_img
-    ]);
-
-$this->section('workshop-content');
-
+$sidebar = $this->raw('sidebar');
+$this->section('admin-content');
 ?>
 
-<?= $this->insert('workshop/partials/banner_header') ?>
+<div class="admin-content">
+    <div class="inner-container">
+        <h2><?= $this->text('admin-home-title') ?></h2>
 
-<?= $this->insert('workshop/partials/main_call_to_action') ?>
+        <?= $this->insert('admin/partials/typeahead', ['engines' => ['channel', 'call', 'project', 'user', 'consultant']]) ?>
 
-<?= $this->insert('workshop/partials/intro_text') ?>
+    <?php foreach($sidebar as $item):
+        if(empty($item['submenu'])) continue;
+    ?>
+        <hr>
+        <h4><?= $item['text'] ?></h4>
+        <div class="index-row">
+            <?php foreach($item['submenu'] as $sub): ?>
+            <div class="col-xs-6 col-sm-4"><a class="btn btn-default btn-block" href="<?= $sub['link'] ?>"><?= $sub['text'] ?></a></div>
+            <?php endforeach ?>
+        </div>
+    <?php endforeach ?>
 
-<?= $this->footer_sponsors ? $this->insert('workshop/partials/partner_footer', ['footer_sponsors' => $this->footer_sponsors]) : '' ?>
-
-<?= $this->insert('workshop/partials/main_info') ?>
-
-<?= !$this->workshop->online ? $this->insert('workshop/partials/how_to_get') : '' ?>
-
-<?= !$this->workshop->expired() ? $this->insert('workshop/partials/extra_call_to_action') : '' ?>
-
-<?= $this->related_workshops ? $this->insert('workshop/partials/related_workshops') : '' ?>
-
-<?= $this->insert('workshop/partials/stories') ?>
-
-<?= $this->insert('workshop/partials/posts') ?>
-
-<?= $this->workshop->event_type=='fundlab-esil' ? $this->insert('workshop/partials/partner') : '' ?>
-
-<?= $this->workshop->event_type=='crowdcoop' ? $this->insert('workshop/partials/partner_singulars') : '' ?>
+    </div>
+</div>
 
 <?php $this->replace() ?>
+
+
+<?php $this->section('footer') ?>
+<script type="text/javascript">
+
+$('.admin-typeahead').on('typeahead:select', function(event, datum, name) {
+    if(datum && datum.url) location = datum.url;
+});
+
+</script>
+<?php $this->append() ?>

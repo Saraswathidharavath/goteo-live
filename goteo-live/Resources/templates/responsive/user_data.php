@@ -1,33 +1,40 @@
 <?php
 
-$this->layout('pool/layout');
+$this->layout('invest/layout', ['alt_title' => $this->text('invest-make-sure-title')]);
 
-$this->section('dashboard-content-pool');
+$this->section('main-content');
 
 ?>
 
-<div class="pool-container">
+<div class="container">
 
-    <h2 class="padding-bottom-2"><?= $this->text('pool-make-sure-title') ?></h2>
+    <div class="row row-form">
+        <div class="panel panel-default invest-container">
+            <div class="panel-body">
 
-    <?php if ($this->invest->getInvestOrigin()): ?>
-        <p>
-            <?= $this->t('donate-invest-origin-thanks') ?>
-        </p>
-    <?php endif; ?>
+                <h2 class="col-sm-offset-1 col-sm-10 padding-bottom-2"><?= $this->text('invest-make-sure-title') ?></h2>
 
-    <?= $this->insert('pool/partials/invest_header_form') ?>
+                <?= $this->insert('invest/partials/invest_header_form') ?>
 
-    <?= $this->supply('sub-header', $this->get_session('sub-header')) ?>
+                <form class="form col-sm-offset-1 col-sm-10" id="make-sure-form" role="form" method="POST" action="/invest/<?= $this->project->id ?>/<?= $this->invest->id ?>">
 
-    <form class="form" id="make-sure-form" role="form" method="POST" action="<?= '/'.$this->type.'/'.$this->invest->id ?>">
+                    <?= $this->supply('invest-form', $this->insert('invest/partials/invest_address_form')) ?>
 
-        <?= $this->supply('invest-form', $this->insert('invest/partials/invest_address_form')) ?>
+                    <?= $this->insert('invest/partials/invest_submit_form') ?>
 
-        <?= $this->insert('invest/partials/invest_submit_form') ?>
+                </form>
 
-	</form>
+            </div>
+        </div>
+    </div>
 
 </div>
 
+<?php $this->replace() ?>
+
+<?php $this->section('facebook-pixel') ?>
+    <?= $this->insert('partials/facebook_pixel', [
+        'pixel' => $this->project->facebook_pixel,
+        'track' => ['PageView', 'Purchase' => ['value' => $this->invest->amount, 'currency' => 'EUR']]
+    ]) ?>
 <?php $this->replace() ?>
