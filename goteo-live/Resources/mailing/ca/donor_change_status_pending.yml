@@ -1,0 +1,15 @@
+group: massive
+name: 'Change of status in donor certificate to completed'
+purpose: 'Communicate the change in the status to the user'
+type: 'md'
+title: "Nuevo cambio de estado en su certificado"
+text: >
+    Hola %USERNAME%,
+
+    Hemos compartido tu certificado con el Ministerio de Hacienda y nos ha comunicado que contiene errores o faltan datos. 
+
+    Entra [aquí](https://www.goteo.org/dashboard/wallet/certificate) para revisarlo y actualizar tus datos para que podamos completar el proceso y puedas desgravar tu aportación. 
+
+    ¡Muchas gracias por confiar en la plataforma impulsando proyectos de impacto social!
+
+    Equipo Goteo
