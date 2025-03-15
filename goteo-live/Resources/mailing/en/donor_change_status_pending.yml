@@ -1,0 +1,17 @@
+group: massive
+name: 'Change of status in donor certificate to pending'
+purpose: 'Communicate the change in the status to the user'
+type: 'md'
+title: "Update in your certificate status"
+text: >
+   Hi %USERNAME%,
+
+    We have shared your certificate with the Ministry of Finance and they have informed us that it contains errors or missing data.
+
+    Enter [here](https://en.goteo.org/dashboard/wallet/certificate) to review it and update your information so that we can complete the process and you can deduct your contribution.
+
+    Thank you very much for trusting the platform promoting projects with social impact!
+
+    Goteo Team
+
+
